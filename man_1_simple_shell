@@ -1,33 +1,45 @@
-.TH SIMPLE_SHELL 1 2021-10-25 GNU
-.SH NAME
-sish \- simple shell
-.SH SYNOPSIS
-.B sish
-[\fB\-n\fR \fIBITS\fR]
-[\fB\-\-bits\fR \fIBITS\fR]
-.IR file ...
+.TH simple_shell "10 May 2022" "V1.0" "simple_shell man page"
+.SH NAME				
+.B simple_shell - Simple Unix comand interpreter	
+simple_shell: the shell or command interpreter is the computer program 
+that provides a user interface to access the services of the operating system.
+
+.SH SYNOPSYS				
+.B #include \fB"shell.h"
+
+./hsh
+/bin/[command] [option]
+[command] [option]
+
 .SH DESCRIPTION
-.B sish
-Project 0x16. C - Simple Shell for creating shell scripts.
+Shell is a user interface to use the services of a computer. 
+It can be a command-line interface –the one we will build- or graphical user interface, 
+like regular software such as Windows Office.
 
-Simple shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems. 
-The shell is both an interactive command language and a scripting language, 
-and is used by the operating system to control the execution of the system using shell scripts
-.SH OPTIONS
-.TP
-.BR \-h ", " \-? ", " \-\-help
-displays this help information.
-.TP
-.BR \-v ", " \-\-version
-outputs only the version datestamp.
-.TP
-.BR \-d ", " \-\-dir " " \fIpath
-outputs only the version datestamp.
+.SH EXAMPLES
+$  /bin/ls -l
+-rw-r--r-- 1 rz 197609  158 Oct 30 11:37 AUTHORS
+-rw-r--r-- 1 rz 197609 3978 Oct 30 11:15 builtins.c
+-rw-r--r-- 1 rz 197609 3934 Oct 30 11:16 f_alias_list.c
+-rw-r--r-- 1 rz 197609 1083 Oct 30 11:16 f_builtin_utils.c
+-rw-r--r-- 1 rz 197609 3018 Oct 30 11:16 f_command_handlers.c
+-rw-r--r-- 1 rz 197609  754 Oct 30 11:14 f_error.c
+-rw-r--r-- 1 rz 197609 1372 Oct 30 11:15 f_exit.c
 
-.SH FILES
-.TP
-.I /simple_shell/man_1_simple_shell
+$  ls -l
+-rw-r--r-- 1 rz 197609  158 may 10 11:37 AUTHORS
+-rw-r--r-- 1 rz 197609 3978 may 10 11:15 builtins.c
+-rw-r--r-- 1 rz 197609 3934 may 10 11:16 f_alias_list.c
+-rw-r--r-- 1 rz 197609 1083 may 10 11:16 f_builtin_utils.c
+-rw-r--r-- 1 rz 197609 3018 may 10 11:16 f_command_handlers.c
+-rw-r--r-- 1 rz 197609  754 may 10 11:14 f_error.c
+-rw-r--r-- 1 rz 197609 1372 may 10 11:15 f_exit.c
 
 .SH AUTHORS
 Redaite Geteye <redaitekalgeteye@gmail.com>
-Arkan Daniel Kebede <21arkandaniel@gmail.com>
+Arkandaniel kebede <21arkandaniel@gmail.com>
+
+.SH BUGS
+There were no errors in the testing time of this code (Augest 10, 2022).
+.SH SEE ALSO
+sh
